@@ -114,3 +114,12 @@ src/ros_stereo_inertial.cc
 target_link_libraries(Stereo_Inertial
 ${LIBS}
 )
+
+# Node for mynteye-d-monocular-inertial camera
+rosbuild_add_executable(mynteye-d-mono-i
+src/ros_mynteye_d_mono_inertial.cc
+)
+
+target_link_libraries(mynteye-d-mono-i
+${LIBS}
+)
